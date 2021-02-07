@@ -1,0 +1,8 @@
+docker run -d \
+           --name "PPTPD" \
+           --restart unless-stopped \
+           --privileged \
+           --net=host \
+           -v $pwd/chap:/etc/ppp/chap-secrets \
+           rattydave/alpine-vpn-pptp
+

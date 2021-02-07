@@ -1,0 +1,50 @@
+local 103.152.119.189
+port 1194
+proto tcp #https://serverfault.com/questions/971266/openvpn-could-not-determine-ipv4-ipv6-protocol-using-af-inet
+dev tun
+
+ca /etc/openvpn/gen2feb/ca.crt
+cert /etc/openvpn/gen2feb/server.crt
+key /etc/openvpn/gen2feb/server.key
+dh /etc/openvpn/gen2feb/dh.pem
+crl-verify /etc/openvpn/gen2feb/crl.pem
+#tls-auth /etc/openvpn/gen2feb/ta.key 0
+
+server 10.8.0.0 255.255.255.0
+ifconfig-pool-persist ipp.txt
+
+client-config-dir ccd
+route 192.168.3.0/24 255.255.255.0
+topology subnet
+client-to-client 
+#username-as-common-name
+duplicate-cn
+
+keepalive 10 120
+tun-mtu 1500
+mssfix 1450
+
+user openvpn
+group openvpn
+#user nobody
+#group nobody
+
+push "redirect-gateway def1 bypass-dhcp"
+push "dhcp-option DNS 8.8.8.8"
+push "dhcp-option DNS 8.8.4.4"
+management 127.0.0.1 7505 
+
+cipher AES-256-CBC
+auth SHA1
+
+persist-key
+persist-tun
+
+status /var/log/openvpn-status.log
+log-append /var/log/openvpn.log
+
+verb 5
+;verify-client-cert none ##recommend
+;plugin /usr/lib/x86_64-linux-gnu/openvpn/plugins/openvpn-plugin-auth-pam.so login
+
+#client-cert-not-required

@@ -1,0 +1,3 @@
+-A POSTROUTING -s 10.8.0.0/24 -j SNAT --to-source 103.152.119.189
+-A POSTROUTING -s 10.8.0.0/24 ! -d 10.8.0.0/24 -j SNAT --to-source 103.152.119.189
+

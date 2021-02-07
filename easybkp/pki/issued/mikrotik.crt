@@ -1,0 +1,53 @@
+Certificate:
+    Data:
+        Version: 3 (0x2)
+        Serial Number:
+            24:ed:02:99:e3:dc:30:9d:cc:04:61:f3:0a:84:70:58
+        Signature Algorithm: ecdsa-with-SHA256
+        Issuer: CN=ChangeMe
+        Validity
+            Not Before: Feb  3 01:49:22 2021 GMT
+            Not After : Jan 19 01:49:22 2024 GMT
+        Subject: CN=mikrotik
+        Subject Public Key Info:
+            Public Key Algorithm: id-ecPublicKey
+                Public-Key: (256 bit)
+                pub:
+                    04:fe:0c:e9:63:c9:a4:5b:f2:b2:2a:5b:01:0b:04:
+                    4b:57:bd:12:a2:03:b1:0c:19:76:f9:c3:23:28:0d:
+                    6c:32:17:8c:2d:42:db:ff:a1:25:0f:14:34:7c:1b:
+                    0d:9f:f3:7b:5f:0f:7f:ca:4b:58:4c:e7:a9:06:61:
+                    c5:12:aa:a3:7e
+                ASN1 OID: prime256v1
+                NIST CURVE: P-256
+        X509v3 extensions:
+            X509v3 Basic Constraints: 
+                CA:FALSE
+            X509v3 Subject Key Identifier: 
+                C1:D6:9C:39:21:8D:2E:0F:85:1E:BA:53:94:CD:49:1F:93:3D:AD:32
+            X509v3 Authority Key Identifier: 
+                keyid:A4:46:2C:27:CB:FD:95:F6:1E:84:5F:B9:08:DE:83:D0:DD:F4:63:4A
+                DirName:/CN=ChangeMe
+                serial:39:49:ED:10:49:FC:38:DD:2F:49:71:C3:96:B6:B7:23:36:37:DE:87
+
+            X509v3 Extended Key Usage: 
+                TLS Web Client Authentication
+            X509v3 Key Usage: 
+                Digital Signature
+    Signature Algorithm: ecdsa-with-SHA256
+         30:45:02:20:30:36:51:04:49:56:ed:53:32:ae:c5:42:a7:03:
+         3f:49:6e:df:79:82:ad:8e:ce:d5:00:8a:93:69:9c:af:28:90:
+         02:21:00:be:5f:be:6e:b1:a2:af:0a:dd:fb:a8:34:cd:43:33:
+         cd:aa:01:c7:00:df:cb:56:8b:45:2f:b9:a8:74:33:3f:ef
+-----BEGIN CERTIFICATE-----
+MIIBxDCCAWqgAwIBAgIQJO0CmePcMJ3MBGHzCoRwWDAKBggqhkjOPQQDAjATMREw
+DwYDVQQDDAhDaGFuZ2VNZTAeFw0yMTAyMDMwMTQ5MjJaFw0yNDAxMTkwMTQ5MjJa
+MBMxETAPBgNVBAMMCG1pa3JvdGlrMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAE
+/gzpY8mkW/KyKlsBCwRLV70SogOxDBl2+cMjKA1sMheMLULb/6ElDxQ0fBsNn/N7
+Xw9/yktYTOepBmHFEqqjfqOBnzCBnDAJBgNVHRMEAjAAMB0GA1UdDgQWBBTB1pw5
+IY0uD4UeulOUzUkfkz2tMjBOBgNVHSMERzBFgBSkRiwny/2V9h6EX7kI3oPQ3fRj
+SqEXpBUwEzERMA8GA1UEAwwIQ2hhbmdlTWWCFDlJ7RBJ/DjdL0lxw5a2tyM2N96H
+MBMGA1UdJQQMMAoGCCsGAQUFBwMCMAsGA1UdDwQEAwIHgDAKBggqhkjOPQQDAgNI
+ADBFAiAwNlEESVbtUzKuxUKnAz9Jbt95gq2OztUAipNpnK8okAIhAL5fvm6xoq8K
+3fuoNM1DM82qAccA38tWi0Uvuah0Mz/v
+-----END CERTIFICATE-----

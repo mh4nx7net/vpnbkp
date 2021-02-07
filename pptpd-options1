@@ -1,0 +1,19 @@
+name pptpd
+
+refuse-pap
+refuse-chap
+refuse-mschap
+require-mschap-v2
+require-mppe-128
+proxyarp
+nodefaultroute
+lock
+nobsdcomp
+noipx
+ms-dns 1.1.1.1
+proxyarp
+nodefaultroute
+debug
+auth
+#mtu 1490
+#mru 1490

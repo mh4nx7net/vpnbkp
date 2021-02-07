@@ -1,0 +1,13 @@
+client
+dev tun
+proto udp
+remote 103.152.119.189 1194
+resolv-retry infinite
+nobind
+remote-cert-tls server
+tls-version-min 1.2
+verify-x509-name server_1aec99a3-45cf-4daf-a641-1fe9488eb5e0 name
+cipher AES-256-CBC
+auth SHA256
+auth-nocache
+verb 3
